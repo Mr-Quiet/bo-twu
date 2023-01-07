@@ -155,7 +155,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: clip;
+  overflow: hidden;
 }
 
 .wrapper > main {
@@ -221,10 +221,6 @@ h6 {
   border: 1px solid #383D3B;
 }
 
-.button_more-card:active {
-  background-color: #474D4A;
-}
-
 .button_more {
   margin: 0 auto;
   border: 1px solid #119DA4;
@@ -233,20 +229,11 @@ h6 {
   line-height: 1.25;
 }
 
-.button_more:active {
-  background-color: #12BDC6;
-  border: 1px solid #12BDC6;
-}
-
 .button_support {
   color: #fff;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  background-color: #119DA4;
-}
-
-.button_support:active {
   background-color: #119DA4;
 }
 
@@ -292,19 +279,10 @@ h6 {
   z-index: 5;
 }
 
-.link-action:active {
-  background-color: #00767C;
-}
-
 .link-action_watch {
   font-weight: 400;
   color: #119DA4;
   background-color: #f6f6f6;
-}
-
-.link-action_watch:active {
-  color: #00767C;
-  background-color: #EFEFEF;
 }
 
 .head__title {
@@ -717,10 +695,6 @@ h6 {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-
-.search__button:active {
-  background-color: #119DA4;
 }
 
 .header {
@@ -2618,22 +2592,44 @@ button.swiper-pagination-bullet {
     color: #fff;
   }
 
+  .button_more-card:active {
+    background-color: #474D4A;
+  }
+
   .button_more:hover {
     background-color: #119DA4;
     color: #fff;
+  }
+
+  .button_more:active {
+    background-color: #12BDC6;
+    border: 1px solid #12BDC6;
   }
 
   .button_support:hover {
     background-color: #12BDC6;
   }
 
+  .button_support:active {
+    background-color: #119DA4;
+  }
+
   .link-action:hover {
     background-color: #12BDC6;
+  }
+
+  .link-action:active {
+    background-color: #00767C;
   }
 
   .link-action_watch:hover {
     color: #12BDC6;
     background-color: #F1F1F9;
+  }
+
+  .link-action_watch:active {
+    color: #00767C;
+    background-color: #EFEFEF;
   }
 
   .slide-control__button:hover,
@@ -2643,6 +2639,10 @@ button.swiper-pagination-bullet {
 
   .search__button:hover {
     background-color: #12BDC6;
+  }
+
+  .search__button:active {
+    background-color: #119DA4;
   }
 
   .menu__link:hover {
