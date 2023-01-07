@@ -577,6 +577,9 @@ h6 {
   font-size: 0.75rem;
 }
 
+.no-webp .header-page{
+  background: url("../img/bg-decor.jpg") center/cover no-repeat; }
+
 .header-page {
   padding-top: 4.375rem;
 }
@@ -2665,3 +2668,5 @@ button.swiper-pagination-bullet {
     background-color: #A8A8A8;
   }
 }
+
+.webp .header-page{ background: url(../img/bg-decor.webp) center/cover no-repeat; }
