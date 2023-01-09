@@ -581,7 +581,6 @@ body::after {
       -ms-transform: translate(0px, 1px);
           transform: translate(0px, 1px);
   font-weight: 600;
-  font-size: 1rem;
   line-height: 2;
   color: #000000;
   border: 1px solid #D9D9D9;
@@ -2729,6 +2728,10 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 62em) {
+  .tabs__title {
+    font-size: 1rem;
+  }
+
   .slide-control__button_next,
   .slide-control-project__button_next {
     right: 3.75rem;
@@ -2777,6 +2780,10 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 48em) {
+  .tabs__title {
+    font-size: 0.875rem;
+  }
+
   .head__title {
     font-size: 1.75rem;
   }
@@ -2922,6 +2929,10 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 47.99875em) {
+  .tabs__title {
+    padding: 0.4375rem 0.75rem;
+  }
+
   .touch [data-fullscreen] {
     -webkit-transition: height 0.2s;
     -o-transition: height 0.2s;
@@ -3116,6 +3127,20 @@ button.swiper-pagination-bullet {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (min-width: 48em) and (max-width: 62em) {
+@supports (font-size: clamp( 0.875rem , 0.4464285714rem  +  0.8928571429vw , 1rem )) {
+    .tabs__title {
+      font-size: clamp( 0.875rem , 0.4464285714rem  +  0.8928571429vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.4464285714rem  +  0.8928571429vw , 1rem )) {
+    .tabs__title {
+      font-size: calc(0.875rem + 0.125 * (100vw - 48rem) / 14);
+    }
+}
 }
 
 @media (min-width: 48em) and (max-width: 80em) {
