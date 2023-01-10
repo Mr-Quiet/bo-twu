@@ -3947,7 +3947,8 @@
                 activeLink.classList.remove("menu__link_active");
                 target.classList.add("menu__link_active");
             }
-            if (target.closest(".button_more")) {
+            if (target.closest(".button_more")) if (!target.parentElement.classList.contains("our-projects") && !target.parentElement.classList.contains("our-news__container")) {
+                console.log(target.parentElement);
                 e.preventDefault();
                 target.classList.add("button_an-rotate");
                 setTimeout((() => {
