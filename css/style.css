@@ -470,6 +470,10 @@ body::after {
      object-fit: contain;
 }
 
+.currency-popup__text {
+  line-height: 1;
+}
+
 .amount-popup {
   padding-bottom: 0.9375rem;
   border-bottom: 1px solid #E7E7E7;
@@ -487,6 +491,11 @@ body::after {
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
   gap: 0.9375rem;
+}
+
+.support-post .amount-popup__actions {
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .amount-popup__button {
@@ -2841,24 +2850,6 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 35em) {
-  .tablet-section__list {
-    -ms-grid-columns: 60% 40%;
-    grid-template-columns: 60% 40%;
-  }
-
-  .tablet-section__item_donor {
-    display: none;
-  }
-
-  .tablet-section__info_data .tablet-section__info_donor {
-    display: inline;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
-  }
-}
-
 @media (max-width: 30em) {
   .header-page__container {
     padding-top: 6.875rem;
@@ -2976,6 +2967,11 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 53.125em) {
+  .support-post .amount-popup__actions {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .sections-page__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3166,6 +3162,11 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 36.25em) {
+  .support-post .amount-popup__actions {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .slide-control,
   .slide-control-project {
     display: none;
@@ -3179,6 +3180,22 @@ button.swiper-pagination-bullet {
   .slide-control__button_prev,
   .slide-control-project__button_prev {
     left: 0.9375rem;
+  }
+
+  .tablet-section__list {
+    -ms-grid-columns: 60% 40%;
+    grid-template-columns: 60% 40%;
+  }
+
+  .tablet-section__item_donor {
+    display: none;
+  }
+
+  .tablet-section__info_data .tablet-section__info_donor {
+    display: inline;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
   }
 }
 
