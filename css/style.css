@@ -234,12 +234,41 @@ h6 {
   line-height: 1.25;
 }
 
+.button_an-rotate::before {
+  -webkit-animation: arrow-rotate 1s infinite linear;
+          animation: arrow-rotate 1s infinite linear;
+}
+
 .button_support {
   color: #fff;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   background-color: #119DA4;
+}
+
+@-webkit-keyframes arrow-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes arrow-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 body::after {

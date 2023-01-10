@@ -3947,6 +3947,13 @@
                 activeLink.classList.remove("menu__link_active");
                 target.classList.add("menu__link_active");
             }
+            if (target.closest(".button_more")) {
+                e.preventDefault();
+                target.classList.add("button_an-rotate");
+                setTimeout((() => {
+                    target.classList.remove("button_an-rotate");
+                }), 2500);
+            }
             const swipers = document.querySelectorAll(".cards__slider");
             if (swipers.length) {
                 const swiperNews = swipers[0].swiper;
