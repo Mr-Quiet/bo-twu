@@ -2085,7 +2085,7 @@ body::after {
   position: absolute;
   width: 3.125rem;
   height: 100%;
-  top: -95%;
+  top: -80%;
   left: 50%;
   font-family: "Cousine";
   font-size: 0.75rem;
