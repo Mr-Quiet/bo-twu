@@ -3955,6 +3955,19 @@
                     target.classList.remove("button_an-rotate");
                 }), 2500);
             }
+            if (target.closest(".tabs-transfer__button")) {
+                const inputTemp = document.createElement("input");
+                inputTemp.value = target.previousElementSibling.textContent;
+                inputTemp.style = `opacity: 0; position: absolute; top: 0; left: -100%;`;
+                target.parentElement.append(inputTemp);
+                inputTemp.select();
+                document.execCommand("copy");
+                target.children[1].classList.add("tabs-transfer__tooltip_visible");
+                setTimeout((() => {
+                    target.children[1].classList.remove("tabs-transfer__tooltip_visible");
+                }), 1500);
+                inputTemp.remove();
+            }
             const swipers = document.querySelectorAll(".cards__slider");
             if (swipers.length) {
                 const swiperNews = swipers[0].swiper;
