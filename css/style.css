@@ -2065,11 +2065,11 @@ body::after {
 
 .tabs-transfer__button {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 0.9375rem;
-          flex: 0 0 0.9375rem;
+      -ms-flex: 0 0 1.125rem;
+          flex: 0 0 1.125rem;
   position: relative;
-  width: 0.9375rem;
-  height: 0.9375rem;
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 .tabs-transfer__button svg {
@@ -2088,7 +2088,7 @@ body::after {
   top: -95%;
   left: 50%;
   font-family: "Cousine";
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   line-height: 110%;
   color: #A6A6A6;
   -webkit-transition: all 0.3s ease 0s;
