@@ -3958,7 +3958,7 @@
             if (target.closest(".tabs-transfer__button")) {
                 const inputTemp = document.createElement("input");
                 inputTemp.value = target.previousElementSibling.textContent;
-                inputTemp.style = `opacity: 0; position: absolute; top: 0; left: -100%;`;
+                inputTemp.classList.add("tabs-transfer__input-hidden");
                 target.parentElement.append(inputTemp);
                 inputTemp.select();
                 document.execCommand("copy");

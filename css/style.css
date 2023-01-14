@@ -208,6 +208,12 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.75rem;
+  outline: none;
+}
+
+.button:focus {
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
+          box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
 }
 
 .button._fw {
@@ -686,6 +692,12 @@ body::after {
   font-weight: 600;
   position: relative;
   z-index: 5;
+  outline: none;
+}
+
+.link-action:focus {
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
+          box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
 }
 
 .link-action_watch {
@@ -1151,6 +1163,12 @@ body::after {
      object-fit: cover;
   position: relative;
   z-index: 30;
+  outline: none;
+}
+
+.header__logo:focus {
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
+          box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
 }
 
 .header__logo img {
@@ -1187,6 +1205,12 @@ body::after {
   transition: color 0.3s ease 0s;
   position: relative;
   z-index: 5;
+  outline: none;
+}
+
+.menu__link:focus {
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
+          box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
 }
 
 .menu__link::before {
@@ -1277,6 +1301,12 @@ body::after {
 .body-footer__image-ibg {
   width: 7.8125rem;
   height: 3.4375rem;
+  outline: none;
+}
+
+.body-footer__image-ibg:focus {
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(131, 156, 227, 0.25);
+          box-shadow: 0px 0px 0px 3px rgba(131, 156, 227, 0.25);
 }
 
 .body-footer__info {
@@ -1306,6 +1336,7 @@ body::after {
   transition: color 0.3s ease 0s;
   font-weight: 300;
   position: relative;
+  outline: none;
 }
 
 .body-footer__link::before {
@@ -1314,6 +1345,14 @@ body::after {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.body-footer__link:focus {
+  color: #A8A8A8;
+}
+
+.body-footer__link:focus::before {
+  color: #A8A8A8;
 }
 
 .body-footer__link_underline::after {
@@ -2029,6 +2068,12 @@ body::after {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+.tabs-transfer__action:focus {
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
+          box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
 }
 
 .tabs-transfer__action._tab-active {
@@ -2070,6 +2115,7 @@ body::after {
   position: relative;
   width: 1.125rem;
   height: 1.125rem;
+  outline: none;
 }
 
 .tabs-transfer__button svg {
@@ -2081,30 +2127,67 @@ body::after {
   left: 0;
 }
 
+.tabs-transfer__button:focus {
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
+          box-shadow: 0px 0px 0px 3px rgba(17, 157, 164, 0.25);
+}
+
 .tabs-transfer__tooltip {
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
-  width: 3.125rem;
-  height: 100%;
-  top: -80%;
+  width: 3.5625rem;
+  top: -200%;
   left: 50%;
   font-family: "Cousine";
   font-size: 0.75rem;
-  line-height: 110%;
-  color: #A6A6A6;
+  color: #fff;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  opacity: 0;
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
   -webkit-transform: scale(0) translateX(-50%);
       -ms-transform: scale(0) translateX(-50%);
           transform: scale(0) translateX(-50%);
+  background-color: #119DA4;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem;
+}
+
+.tabs-transfer__tooltip::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  bottom: -50%;
+  left: 50%;
+  background-color: #119DA4;
+  -webkit-transform: translate(-50%, -85%) rotate(45deg);
+      -ms-transform: translate(-50%, -85%) rotate(45deg);
+          transform: translate(-50%, -85%) rotate(45deg);
 }
 
 .tabs-transfer__tooltip_visible {
   -webkit-transform: scale(1) translateX(-50%);
       -ms-transform: scale(1) translateX(-50%);
           transform: scale(1) translateX(-50%);
-  opacity: 1;
+}
+
+.tabs-transfer__input-hidden {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: -100%;
 }
 
 /**
